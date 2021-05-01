@@ -2,7 +2,7 @@
   {
     "timeSpent": 35,
     "color": "rgb(245, 210, 72)",
-    "interest": "Rock climbing 🧗"
+    "interest": "Gaming 🎮"
   },
   {
     "timeSpent": 25,
@@ -10,13 +10,13 @@
     "interest": "Coding 🤓"
   },
   {
-    "timeSpent": 23,
+    "timeSpent": 25,
     "color": "rgb(32, 94, 113)",
-    "interest": "Dinner with friends 🍕"
+    "interest": "Eat 🍕"
   },
   {
-    "timeSpent": 10,
+    "timeSpent": 15,
     "color": "rgb(100, 232, 60)",
-    "interest": "Making fancy drinks 🍹"
+    "interest": "Reading 📚"
   }
 ]

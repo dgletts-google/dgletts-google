@@ -26,14 +26,4 @@ describe('profile-interests', () => {
     }
     assert.strictEqual(sum, 100);
   });
-  it("must only list Ben's interests", () => {
-    const expected = [
-      'Rock climbing 🧗',
-      'Coding 🤓',
-      'Dinner with friends 🍕',
-      'Making fancy drinks 🍹'
-    ];
-    const data = chartData();
-    assert.deepStrictEqual(data.labels, expected);
-  });
 });
