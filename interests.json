@@ -1,0 +1,22 @@
+[
+  {
+    "timeSpent": 35,
+    "color": "rgb(245, 210, 72)",
+    "interest": "Rock climbing 🧗"
+  },
+  {
+    "timeSpent": 25,
+    "color": "rgb(227, 139, 132)",
+    "interest": "Coding 🤓"
+  },
+  {
+    "timeSpent": 23,
+    "color": "rgb(32, 94, 113)",
+    "interest": "Dinner with friends 🍕"
+  },
+  {
+    "timeSpent": 10,
+    "color": "rgb(100, 232, 60)",
+    "interest": "Making fancy drinks 🍹"
+  }
+]

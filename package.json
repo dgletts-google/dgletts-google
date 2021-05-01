@@ -1,0 +1,35 @@
+{
+  "name": "ci-cd-workshop",
+  "version": "1.0.0",
+  "description": "ci/cd, workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "c8 mocha test.js",
+    "posttest": "semistandard",
+    "fix": "semistandard --fix",
+    "generate": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcoe/ci-cd-workshop.git"
+  },
+  "keywords": [
+    "ci/cd",
+    "workshop"
+  ],
+  "author": "Google LLC",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bcoe/ci-cd-workshop/issues"
+  },
+  "homepage": "https://github.com/bcoe/ci-cd-workshop#readme",
+  "dependencies": {
+    "chart.js": "^2.9.4",
+    "chartjs-node-canvas": "^3.1.0"
+  },
+  "devDependencies": {
+    "c8": "^7.7.1",
+    "mocha": "^8.3.2",
+    "semistandard": "^16.0.0"
+  }
+}
