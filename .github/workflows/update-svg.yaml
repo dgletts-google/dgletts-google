@@ -1,0 +1,30 @@
+on:
+  push:
+    branches:
+      - main
+name: push-interest-changes
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install
+      run: npm install
+    - name: build
+      run: npm run generate
+    - name: commit
+      run: |-
+        set -e
+        git config --global user.name "actions-bot"
+        git config user.email 'github-actions-bot@google.com'
+        git checkout package-lock.json
+    - name: Create PR to update SVG
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "chore: update interests.svg"
+        author: "actions-bot <github-actions-bot@google.com>"
+        title: "chore: update interests.svg"
+        labels: automated pr
+        branch: create-pull-request/update-interests
+        delete-branch: true
